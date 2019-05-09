@@ -1,5 +1,6 @@
 from databasemodel import db
 
+
 #定义用户实体
 class User(db.Model):
     id = db.Column(db.INTEGER, primary_key=True)

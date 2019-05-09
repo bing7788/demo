@@ -20,6 +20,7 @@ class UserCollection(Resource):
         Returns list of user posts.
         """
         user_query = User.query.all()
+        print("1", type(user_query))
 
         return user_query
 
@@ -28,6 +29,7 @@ class UserCollection(Resource):
         """
         Create a new user
         """
+        print(request.json)
         create_user(request.json)
         return None, 201
 
